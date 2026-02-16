@@ -1,0 +1,55 @@
+[gd_resource type="TileSet" format=3 uid="uid://d0hxugv7pqdvr"]
+
+[ext_resource type="Texture2D" uid="uid://buxgw80w01mii" path="res://assets/textures/tilesets/city_ground.png" id="1_ehe1q"]
+[ext_resource type="Texture2D" uid="uid://cuysmgxsju5q0" path="res://assets/textures/tilesets/city_walls.png" id="2_vmnw8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
+resource_name = "Ground"
+texture = ExtResource("1_ehe1q")
+1:0/0 = 0
+1:0/0/z_index = -1
+2:0/0 = 0
+2:0/0/z_index = -1
+0:0/0 = 0
+0:0/0/z_index = -1
+0:0/0/custom_data_0 = 2
+0:1/0 = 0
+0:1/0/z_index = -1
+0:1/0/custom_data_0 = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wg4ww"]
+resource_name = "Walls"
+texture = ExtResource("2_vmnw8")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/size_in_atlas = Vector2i(1, 2)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, 8)
+2:0/0/y_sort_origin = 8
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -24, 8, -24, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[resource]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 6
+custom_data_layer_0/name = "Ink Behaviour"
+custom_data_layer_0/type = 2
+sources/1 = SubResource("TileSetAtlasSource_d5x1h")
+sources/2 = SubResource("TileSetAtlasSource_wg4ww")

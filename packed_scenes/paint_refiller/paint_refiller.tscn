@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dp24lhwcgx1xs"]
+
+[ext_resource type="Script" uid="uid://cx7l6acc7oxv7" path="res://packed_scenes/paint_refiller/paint_refiller.gd" id="1_4bfjh"]
+[ext_resource type="Texture2D" uid="uid://dism8k67yb0yp" path="res://icon.svg" id="1_5hus5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mm7a"]
+size = Vector2(48, 48)
+
+[node name="PaintRefiller" type="Area2D" unique_id=1950199258]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_4bfjh")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1183390297]
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_5hus5")
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1787386754]
+shape = SubResource("RectangleShape2D_8mm7a")
+
+[connection signal="body_entered" from="." to="." method="_body_entered"]
+[connection signal="body_exited" from="." to="." method="_body_exited"]

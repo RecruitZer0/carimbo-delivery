@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ihxa6ngwi7x0"]
+
+[ext_resource type="Script" uid="uid://b52eu40gu37ou" path="res://packed_scenes/game_camera/game_camera.gd" id="1_fein8"]
+
+[node name="GameCamera" type="Camera2D"]
+limit_left = 0
+limit_top = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 16.0
+script = ExtResource("1_fein8")
