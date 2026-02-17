@@ -28,6 +28,6 @@ tile_set = ExtResource("1_gyfs4")
 position = Vector2(32, 224)
 
 [node name="Player" parent="TutorialWorld" unique_id=943591124 instance=ExtResource("1_0f027")]
-position = Vector2(208, 176)
+position = Vector2(32, 240)
 
 [node name="GameCamera" parent="TutorialWorld" unique_id=543462577 instance=ExtResource("2_2c62f")]
