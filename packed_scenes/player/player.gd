@@ -37,11 +37,11 @@ func _post_move(_delta: float, _collided: bool) -> void:
 	should_create_stamp = true
 	emit_signal("stamp_check")
 	
-	if should_spend_ink and sprite.frame > 0:
+	if should_spend_ink and sprite.frame == 1:
 		if should_create_stamp and ink_amount > 0:
 			create_stamp()
 			ink_amount -= stamp_cost()
-		elif sprite.frame == 1 and ink_cooldown == 0:
+		elif ink_cooldown == 0:
 			ink_amount -= stamp_cost()
 			ink_cooldown = 0.4
 
